@@ -38,7 +38,11 @@ h2{
   padding-top:60px;
   padding-bottom:60px;
   &.header-section{
-    background-color:blue;
+    background-image: url('../../assets/images/back.png');
+    @media screen and(min-width: $screen-sm-max) {
+       background-image:none;
+    }
+    background-position: top;
     min-height:500px;
     h1, h2{
       color:white;
@@ -78,6 +82,7 @@ h2{
     display: block !important;
 }
 .video-container {
+    z-index:-1;
     top: 0%;
     bottom:0%;
     left: 0%;
@@ -96,6 +101,17 @@ h2{
     width: 100%;
 }
 .video-container video {
+    margin-top:-100px;
+    width:100%;
+    @media screen and(max-width: $screen-sm-max) {
+        display:none;
+    }
+    @media screen and(max-width:  $screen-lg-min) {
+        width: auto;
+    }
+    @media screen and(max-width: 1400px) {
+        margin-top:0px;
+    }
     z-index: 0;
     bottom: 0;
 }
