@@ -2,6 +2,7 @@
 
 angular.module('harryAppLandingApp', [
   'harryAppLandingApp.constants',
+  'harryAppLandingApp.util',
   'ngCookies',
   'ngResource',
   'ngSanitize',

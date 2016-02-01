@@ -4,9 +4,11 @@
 
 class MainController {
 
-  constructor($http) {
+  constructor($http, Util, $scope) {
     this.$http = $http;
     this.awesomeThings = [];
+    this.Util = Util;
+    $scope.scrollTo = this.scrollTo.bind(this);
 
     $http.get('/api/things').then(response => {
       this.awesomeThings = response.data;
@@ -23,9 +25,34 @@ class MainController {
   deleteThing(thing) {
     this.$http.delete('/api/things/' + thing._id);
   }
+
+  scrollTo(target) {
+    this.Util.scrollTo(jQuery('#'+target));
+  }
 }
 
 angular.module('harryAppLandingApp')
   .controller('MainController', MainController);
+  //STICKY MENU
+  var navPosition;
+  jQuery(window).scroll(function(){
+    if(!navPosition){
+      navPosition=jQuery('nav').offset().top;
+    }
+    var navTop=jQuery(window).scrollTop();
+    if(navPosition + 100 < navTop){
+      jQuery('nav').addClass('fixed');
+    }
+    else{
+      jQuery('nav').removeClass('fixed');
+    }
+  });
 
+  //TRANSITION MENU
+  jQuery('ul a,#gotoTop').click(function(){
+      var lienHref=jQuery(this).attr('href');
+      var positionHrefTop=jQuery(lienHref).offset().top;
+      jQuery('html,body').animate({scrollTop:positionHrefTop-50},1000);
+      return false;
+  });
 })();

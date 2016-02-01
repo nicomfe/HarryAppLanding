@@ -5,7 +5,7 @@
 /**
  * The Util service is for thin, globally reusable, utility functions
  */
-function UtilService($window) {
+function UtilService($window, $timeout) {
   var Util = {
     /**
      * Return a callback or noop function
@@ -47,6 +47,24 @@ function UtilService($window) {
           url.protocol === o.protocol;
       });
       return (origins.length >= 1);
+    },
+
+    scrollTo(target, topPadding, complete) {
+        if(!topPadding){
+          topPadding = 20;
+        }
+        $timeout(function() {
+            var $target = $(target);
+
+            var scrollTop = $target.length ? $target.offset().top - 10 - (topPadding || 0) : 0;
+
+            $('html, body').animate({
+                scrollTop: scrollTop
+            }, 500, null, function() {
+                if (complete)
+                    complete($target);
+            });
+        });
     }
   };
 
