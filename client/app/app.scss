@@ -2,7 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
-
+@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,200,700);
 /**
  * App-wide Styles
  */
@@ -14,9 +14,15 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   padding: 0.2em 0;
 }
 
+body {
+  font-family: 'Ek Mukta', sans-serif;
+}
 // Component styles are injected through grunt
 // injector
-@import 'main/main.scss';
-@import 'main/menu.scss';
-@import '../components/footer/footer.scss';
+@import 'get-in-touch/styles.scss';
+@import 'how-it-works/styles.scss';
+@import 'main/styles.scss';
+@import 'testimonials/styles.scss';
+@import '../components/footer/styles.scss';
+@import '../components/navbar/styles.scss';
 // endinjector

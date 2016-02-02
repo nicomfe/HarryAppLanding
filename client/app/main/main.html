@@ -1,13 +1,4 @@
-<header id="header">
-  <nav id="menu">
-    <ul>
-      <li><a href ng-click="scrollTo('header')">LOGO</a></li>
-      <li><a href ng-click="scrollTo('howitworks')">How it works</a></li>
-      <li><a href ng-click="scrollTo('testimonials')">Testimonials</a></li>
-      <li><a href ng-click="scrollTo('getintouch')">Get in touch</a></li>
-    </ul>
-  </nav>
-</header>
+<div ng-include="'components/navbar/navbar.html'"></div>
 <div class="section header-section">
     <div class="video-container overlay">
       <div class="filter"></div>
@@ -40,34 +31,7 @@
       </div>
     </div>
 </div>
-<div id="howitworks" class="section how-it-works-section">
-  <h1>HOW IT WORKS</h1>
-  <h2>This view contains how Harry app works</h2>
-  <div class="need-harry-panel col-sm-6">
-    This is the need harry panel
-  </div>
-  <div class="can-be-harry-panel col-sm-6">
-    This is the can be harry panel
-  </div>
-</div>
-<div id="testimonials" class="section testimonials-section">
-  <h1>TESTIMONIALS</h1>
-  <div class="col-sm-4">
-    <p>FIRST TESTIMONIAL</p>
-  </div>
-  <div class="col-sm-4">
-    <p>SECOND TESTIMONIAL</p>
-  </div>
-  <div class="col-sm-4">
-    <p>THIRD TESTIMONIAL</p>
-  </div>
-</div>
-
-<div id="getintouch" class="section testimonials-section">
-  <h1>GET IN TOUCH</h1>
-  <p>This is the section for the contact form</p>
-</div>
-
-<div class="section footer-section">
-  <p>This is the footer</p>
-</div>
+<div ng-include="'app/how-it-works/how-it-works.html'"></div>
+<div ng-include="'app/testimonials/testimonials.html'"></div>
+<div ng-include="'app/get-in-touch/get-in-touch.html'"></div>
+<div ng-include="'components/footer/footer.html'"></div>
