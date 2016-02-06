@@ -10,13 +10,10 @@ class NavbarController {
   isCollapsed = true;
   //end-non-standard
 
-  constructor($location) {
-    this.$location = $location;
-    }
+  constructor() {
 
-  isActive(route) {
-    return route === this.$location.path();
   }
+
 }
 
 angular.module('harryAppLandingApp')

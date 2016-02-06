@@ -1,4 +1,4 @@
-<header id="header">
+<!-- <header id="header">
   <nav id="menu" class="fixed">
     <ul>
       <li><a href ng-click="scrollTo('header')"><img src="assets/images/harry-logo.svg" alt=""></a></li>
@@ -7,4 +7,20 @@
       <li><a href ng-click="scrollTo('getintouch')">GET IN TOUCH</a></li>
     </ul>
   </nav>
+</header> -->
+
+
+<header id="header">
+<a id="menu-icon" href ng-click="openMenu()"><span class="first"></span><span class="second"></span><span class="third"></span></a>
+  <div class="logo">
+    <a href ng-click="scrollTo('header')"><img src="assets/images/harry-logo.svg" alt=""></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href ng-click="scrollTo('howitworks')">HOW IT WORKS</a></li>
+      <li><a href ng-click="scrollTo('testimonials')">TESTIMONIALS</a></li>
+      <li><a href ng-click="scrollTo('getintouch')">GET IN TOUCH</a></li>
+    </ul>
+  </nav>
 </header>
+

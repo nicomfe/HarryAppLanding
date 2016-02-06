@@ -9,7 +9,7 @@ class MainController {
     this.awesomeThings = [];
     this.Util = Util;
     $scope.scrollTo = this.scrollTo.bind(this);
-
+    $scope.openMenu = this.openMenu.bind(this);
     $http.get('/api/things').then(response => {
       this.awesomeThings = response.data;
     });
@@ -28,6 +28,18 @@ class MainController {
 
   scrollTo(target) {
     this.Util.scrollTo(jQuery('#'+target));
+    if(jQuery('#menu-icon').hasClass('active')){
+      this.toggleMenu();
+    }
+  }
+
+  openMenu(){
+    this.toggleMenu();
+  }
+
+  toggleMenu(){
+    $("nav").slideToggle();
+    $("#menu-icon").toggleClass("active");
   }
 }
 

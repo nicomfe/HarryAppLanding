@@ -178,7 +178,7 @@ h2{
   margin-left:auto;
   margin-right:auto;
   border: 0;
-  background: #00acf1;
+  background: $harry-light-blue;
   border-radius: 5px;
   height: 50px;
   color: white;
@@ -189,7 +189,8 @@ h2{
     border-color: #3498db;
   }
   &:hover{
-    background: #00ac33;
+    background: white;
+    color:$harry-light-blue;
   }
 }
 
