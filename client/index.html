@@ -41,7 +41,6 @@
       ga('create', 'UA-XXXXX-X');
       ga('send', 'pageview');
     </script>
-
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
@@ -56,20 +55,24 @@
       <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="bower_components/angular-route/angular-route.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/skrollr/src/skrollr.js"></script>
       <!-- endbower -->
+      <script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->
       <script src="app/app.js"></script>
       <!-- injector:js -->
       <script src="components/util/util.module.js"></script>
-      <script src="app/app.constant.js"></script>
-      <script src="app/how-it-works/how-it-works.controller.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
       <script src="app/main/main.controller.js"></script>
       <script src="app/main/main.js"></script>
       <script src="components/footer/footer.directive.js"></script>
-      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="app/how-it-works/how-it-works.controller.js"></script>
       <script src="components/navbar/navbar.directive.js"></script>
+      <script src="components/services/subscriber.js"></script>
+      <script src="app/app.constant.js"></script>
       <script src="components/util/util.service.js"></script>
+      <script src="components/values/config.js"></script>
       <!-- endinjector -->
     <!-- endbuild -->
   </body>

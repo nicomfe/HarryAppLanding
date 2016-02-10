@@ -1,3 +1,68 @@
-.how-it-works-section{
-  min-height:400px;
+$background-color: #2babe2;
+$text-color:white;
+
+#info {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
 }
+
+.how-it-works-section{
+  background-color: $background-color;
+  color: $text-color;
+  overflow:hidden;
+  .step{
+    margin-top: 50px;
+    min-height:400px;
+    display: table;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: solid 1px #009bdf;
+    text-align:center;
+    .step-title{
+      font-size:3em;
+      font-family: 'Brooklyn-Samuels-Bold';
+      line-height:1em;
+    }
+    .step-desc{
+      color: #ceecfb;
+      font-size:1em;
+      font-family: 'Brown-Regular';
+    }
+    .step-image{
+      margin-left:auto;
+      margin-right:auto;
+      margin-top:50px;
+      margin-bottom:50px;
+      max-width:300px;
+      object{
+        display: inherit;
+        left:0;
+        right:0;
+        width: 100%;
+      }
+    }
+    &.step-1{
+      margin-top:100px;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and(max-width: $screen-sm-min) {
+  margin-left:10px;
+  margin-right:10px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media screen and(max-width: $screen-md-min) {
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media screen and(max-width: $screen-lg-min) {
+
+}
+

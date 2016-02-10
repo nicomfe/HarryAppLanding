@@ -23,6 +23,11 @@ This project was generated with the [Angular Full-Stack Generator](https://githu
 
 4. Run `grunt serve` to start the development server. It should automatically open the client in your browser when ready.
 
+5. Start mongo-express
+run --> cd into node_modules/mongo-express
+copy content of config.default.js into a new file called config.js (if this doesnt exist)
+run --> node app
+
 ## Build & development
 
 Run `grunt build` for building and `grunt serve` for preview.

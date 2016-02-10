@@ -2,14 +2,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
-@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,200,700);
 /**
  * App-wide Styles
  */
 
 $harry-primary-color: white;
-$harry-secondary-color: #00acf1;
+$harry-secondary-color: #2babe2;
 $harry-inactive-color: #c3c3c3;
+
+@font-face {
+    font-family: Brown-Bold;
+    src: url(../assets/fonts/Brown-Bold/Brown-Bold.woff);
+}
+@font-face {
+    font-family: Brown-Regular;
+    src: url(../assets/fonts/Brown-Regular/Brown-Regular.woff);
+}
+@font-face {
+    font-family: Brooklyn-Samuels-Bold;
+    src: url(../assets/fonts/BrooklynSamuelsFive-Bold/BrooklynSamuelsFive-Bold.woff);
+}
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -20,6 +32,7 @@ $harry-inactive-color: #c3c3c3;
 
 body {
   font-family: 'Ek Mukta', sans-serif;
+  font-size:16px;
 }
 // Component styles are injected through grunt
 // injector

@@ -4,26 +4,48 @@
 
 class MainController {
 
-  constructor($http, Util, $scope) {
+  constructor($http, Util, $scope, subscriberService) {
     this.$http = $http;
     this.awesomeThings = [];
     this.Util = Util;
+    this.subscriberService = subscriberService;
+    $scope.hideMessage = false;
+    this.$scope = $scope;
     $scope.scrollTo = this.scrollTo.bind(this);
     $scope.openMenu = this.openMenu.bind(this);
-    $http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
+    $scope.handleError = this.handleError.bind(this);
+    $scope.addSubscriber = this.addSubscriber.bind(this);
+  }
+
+  addSubscriber(){
+    if(this.$scope.subscriberForm && this.$scope.subscriberForm.$invalid){
+      return;
+    }
+    const ctrl = this;
+    this.subscriberService.add(this.$scope.subscriber).then(function(response){
+      if(response && response.status === 201){
+        ctrl.$scope.successMessage = 'Thanks, we\'ll bee in touch soon!';
+        ctrl.$scope.subscriber = {};
+        setTimeout(function() {
+          ctrl.$scope.disableBtn = true;
+          ctrl.$scope.hideMessage = true;
+          ctrl.$scope.$apply();
+        }, 5000);
+      }else{
+        ctrl.handleError(response.error);
+      }
+    }).catch((err) => {
+      ctrl.handleError(err);
     });
   }
 
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
-    }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
+  handleError(err){
+    this.$scope.errorMessage = 'Something went wrong :(, please try again later';
+    setTimeout(function() {
+      this.$scope.hideMessage = true;
+      this.$scope.$apply();
+    }, 5000);
+    console.warn(err);
   }
 
   scrollTo(target) {
@@ -45,26 +67,4 @@ class MainController {
 
 angular.module('harryAppLandingApp')
   .controller('MainController', MainController);
-  //STICKY MENU
-  // var navPosition;
-  // jQuery(window).scroll(function(){
-  //   if(!navPosition){
-  //     navPosition=jQuery('nav').offset().top;
-  //   }
-  //   var navTop=jQuery(window).scrollTop();
-  //   if(navPosition + 20 < navTop){
-  //     jQuery('nav').addClass('fixed');
-  //   }
-  //   else{
-  //     jQuery('nav').removeClass('fixed');
-  //   }
-  // });
-
-  // //TRANSITION MENU
-  // jQuery('ul a,#gotoTop').click(function(){
-  //     var lienHref=jQuery(this).attr('href');
-  //     var positionHrefTop=jQuery(lienHref).offset().top;
-  //     jQuery('html,body').animate({scrollTop:positionHrefTop-50},1000);
-  //     return false;
-  // });
 })();
