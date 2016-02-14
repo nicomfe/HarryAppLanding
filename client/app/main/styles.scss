@@ -58,10 +58,6 @@ h2{
   padding-top:60px;
   padding-bottom:60px;
   display:inline-block;
-  &.footer-section{
-    background-color: black;
-    color:white;
-  }
 }
 .header-section{
     top:100px;
@@ -316,7 +312,7 @@ div.social a {
   background-size: cover;
 }
 .parallax.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: $harry-secondary-color;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -324,7 +320,8 @@ div.social a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .parallax.module.parallax-1 {
-  background-image: url("http://lorempixel.com/640/480/abstract/4/");
+  // background-image: url(../../assets/images/back.png);
+  background-color: white;
 }
 
 @media all and (min-width: 600px) {

@@ -1,6 +1,21 @@
 footer.footer {
   text-align: center;
-  padding: 30px 0;
-  margin-top: 70px;
+  margin-top: 50px;
   border-top: 1px solid #E5E5E5;
+}
+
+.footer-section{
+  box-shadow: 1pt -1pt 1pt #888888;
+  background-color:white;
+  color: $harry-secondary-color;
+  text-align:center;
+  padding-bottom:0px;
+  padding-top:10px;
+  margin-top: 50px;
+  font-size:13px;
+  a{
+    font-size:13px;
+    color: $harry-secondary-color;
+    text-transform: none;
+  }
 }
