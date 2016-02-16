@@ -1,0 +1,131 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 03/02/2016 12:41
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-puppets-1-68547:before { content: "\f100"; }
+.flaticon-puppets-10-68561:before { content: "\f101"; }
+.flaticon-puppets-11-68562:before { content: "\f102"; }
+.flaticon-puppets-12-68564:before { content: "\f103"; }
+.flaticon-puppets-13-68565:before { content: "\f104"; }
+.flaticon-puppets-14-68567:before { content: "\f105"; }
+.flaticon-puppets-15-68569:before { content: "\f106"; }
+.flaticon-puppets-16-68570:before { content: "\f107"; }
+.flaticon-puppets-17-68571:before { content: "\f108"; }
+.flaticon-puppets-18-68573:before { content: "\f109"; }
+.flaticon-puppets-19-68574:before { content: "\f10a"; }
+.flaticon-puppets-2-68548:before { content: "\f10b"; }
+.flaticon-puppets-20-68575:before { content: "\f10c"; }
+.flaticon-puppets-21-68577:before { content: "\f10d"; }
+.flaticon-puppets-22-68579:before { content: "\f10e"; }
+.flaticon-puppets-23-68580:before { content: "\f10f"; }
+.flaticon-puppets-24-68582:before { content: "\f110"; }
+.flaticon-puppets-25-68584:before { content: "\f111"; }
+.flaticon-puppets-26-68587:before { content: "\f112"; }
+.flaticon-puppets-27-68589:before { content: "\f113"; }
+.flaticon-puppets-28-68590:before { content: "\f114"; }
+.flaticon-puppets-29-68597:before { content: "\f115"; }
+.flaticon-puppets-3-68549:before { content: "\f116"; }
+.flaticon-puppets-30-68600:before { content: "\f117"; }
+.flaticon-puppets-31-68604:before { content: "\f118"; }
+.flaticon-puppets-32-68605:before { content: "\f119"; }
+.flaticon-puppets-33-68606:before { content: "\f11a"; }
+.flaticon-puppets-34-68607:before { content: "\f11b"; }
+.flaticon-puppets-35-68610:before { content: "\f11c"; }
+.flaticon-puppets-36-68613:before { content: "\f11d"; }
+.flaticon-puppets-37-68617:before { content: "\f11e"; }
+.flaticon-puppets-38-68620:before { content: "\f11f"; }
+.flaticon-puppets-39-68629:before { content: "\f120"; }
+.flaticon-puppets-4-68550:before { content: "\f121"; }
+.flaticon-puppets-40-68630:before { content: "\f122"; }
+.flaticon-puppets-41-68632:before { content: "\f123"; }
+.flaticon-puppets-42-68634:before { content: "\f124"; }
+.flaticon-puppets-43-68635:before { content: "\f125"; }
+.flaticon-puppets-44-68636:before { content: "\f126"; }
+.flaticon-puppets-45-68639:before { content: "\f127"; }
+.flaticon-puppets-46-68643:before { content: "\f128"; }
+.flaticon-puppets-47-68644:before { content: "\f129"; }
+.flaticon-puppets-48-68647:before { content: "\f12a"; }
+.flaticon-puppets-49-68651:before { content: "\f12b"; }
+.flaticon-puppets-5-68553:before { content: "\f12c"; }
+.flaticon-puppets-50-68652:before { content: "\f12d"; }
+.flaticon-puppets-51-68653:before { content: "\f12e"; }
+.flaticon-puppets-52-68655:before { content: "\f12f"; }
+.flaticon-puppets-53-68658:before { content: "\f130"; }
+.flaticon-puppets-54-68665:before { content: "\f131"; }
+.flaticon-puppets-55-68666:before { content: "\f132"; }
+.flaticon-puppets-56-68667:before { content: "\f133"; }
+.flaticon-puppets-57-68668:before { content: "\f134"; }
+.flaticon-puppets-58-68671:before { content: "\f135"; }
+.flaticon-puppets-59-68673:before { content: "\f136"; }
+.flaticon-puppets-6-68554:before { content: "\f137"; }
+.flaticon-puppets-60-68680:before { content: "\f138"; }
+.flaticon-puppets-61-68681:before { content: "\f139"; }
+.flaticon-puppets-62-68683:before { content: "\f13a"; }
+.flaticon-puppets-63-68685:before { content: "\f13b"; }
+.flaticon-puppets-64-68689:before { content: "\f13c"; }
+.flaticon-puppets-65-68690:before { content: "\f13d"; }
+.flaticon-puppets-66-68692:before { content: "\f13e"; }
+.flaticon-puppets-67-68694:before { content: "\f13f"; }
+.flaticon-puppets-68-68697:before { content: "\f140"; }
+.flaticon-puppets-68546:before { content: "\f141"; }
+.flaticon-puppets-69-68700:before { content: "\f142"; }
+.flaticon-puppets-7-68555:before { content: "\f143"; }
+.flaticon-puppets-70-68704:before { content: "\f144"; }
+.flaticon-puppets-71-68705:before { content: "\f145"; }
+.flaticon-puppets-72-68707:before { content: "\f146"; }
+.flaticon-puppets-73-68708:before { content: "\f147"; }
+.flaticon-puppets-74-68710:before { content: "\f148"; }
+.flaticon-puppets-75-68711:before { content: "\f149"; }
+.flaticon-puppets-76-68715:before { content: "\f14a"; }
+.flaticon-puppets-77-68716:before { content: "\f14b"; }
+.flaticon-puppets-78-68718:before { content: "\f14c"; }
+.flaticon-puppets-79-68719:before { content: "\f14d"; }
+.flaticon-puppets-8-68556:before { content: "\f14e"; }
+.flaticon-puppets-80-68720:before { content: "\f14f"; }
+.flaticon-puppets-81-68721:before { content: "\f150"; }
+.flaticon-puppets-82-68722:before { content: "\f151"; }
+.flaticon-puppets-83-68723:before { content: "\f152"; }
+.flaticon-puppets-84-68731:before { content: "\f153"; }
+.flaticon-puppets-85-68733:before { content: "\f154"; }
+.flaticon-puppets-86-68734:before { content: "\f155"; }
+.flaticon-puppets-87-68739:before { content: "\f156"; }
+.flaticon-puppets-88-68740:before { content: "\f157"; }
+.flaticon-puppets-89-68741:before { content: "\f158"; }
+.flaticon-puppets-9-68557:before { content: "\f159"; }
+.flaticon-puppets-90-68742:before { content: "\f15a"; }
+.flaticon-puppets-91-68743:before { content: "\f15b"; }
+.flaticon-puppets-92-68745:before { content: "\f15c"; }
+.flaticon-puppets-93-68754:before { content: "\f15d"; }
+.flaticon-puppets-94-68756:before { content: "\f15e"; }
+.flaticon-puppets-95-68758:before { content: "\f15f"; }
+.flaticon-puppets-96-68759:before { content: "\f160"; }
+.flaticon-puppets-97-68762:before { content: "\f161"; }
+.flaticon-puppets-98-68764:before { content: "\f162"; }
+.flaticon-puppets-99-68785:before { content: "\f163"; }

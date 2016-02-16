@@ -1,19 +1,25 @@
 $text-color:white;
 
-#info {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-  padding: 20px;
-  z-index: 9999;
-}
+// #info {
+//   position: fixed;
+//   top: 20px;
+//   left: 20px;
+//   background-color: rgba(0,0,0,0.5);
+//   color: #fff;
+//   padding: 20px;
+//   z-index: 9999;
+// }
 
 .how-it-works-section{
   background-color: $harry-secondary-color;
   color: $text-color;
   overflow:hidden;
+  display: block;
+
+  .features-container{
+    margin-top: 50px;
+    display:flex;
+  }
   .step{
     margin-top: 50px;
     min-height:400px;
@@ -49,12 +55,72 @@ $text-color:white;
       margin-top:100px;
     }
   }
+
+  .need-a-harry-panel{
+    margin-right: auto;
+    margin-left: auto;
+    .feature-icon{
+      margin-left:30px;
+    }
+  }
+
+  .be-a-harry-panel{
+    margin-right: auto;
+    margin-left: auto;
+    .feature-icon{
+      margin-right:30px;
+    }
+  }
+
+  h2{
+    padding-bottom:50px;
+  }
+
+  .celphone{
+    margin-top:auto;
+    margin-bottom:auto;
+    img{
+      margin-left:auto;
+      margin-right:auto;
+      display:block;
+      height:500px;
+    }
+  }
+  .features{
+    max-width: 300px;
+  }
+  .feature{
+    display: flex;
+    height: 150px;
+    .feature-icon{
+      @extend .primary-text;
+      i{
+        &:before{
+          margin-left: 0;
+          font-size: 50px;
+        }
+      }
+    }
+    .feature-description{
+      display: block;
+      text-align: center;
+      p{
+        @extend .secondary-text;
+      }
+      .feature-title{
+        @extend .primary-text;
+        font-weight: bold;
+      }
+    }
+  }
+  .feature + .feature{
+    margin-top: 50px;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
 @media screen and(max-width: $screen-sm-min) {
-  margin-left:10px;
-  margin-right:10px;
+
 }
 /* Medium devices (desktops, 992px and up) */
 @media screen and(max-width: $screen-md-min) {
