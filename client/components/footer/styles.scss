@@ -7,15 +7,30 @@ footer.footer {
 .footer-section{
   box-shadow: 1pt -1pt 1pt #888888;
   background-color:white;
-  color: $harry-secondary-color;
+  color: $harry-primary-color;
   text-align:center;
-  padding-bottom:0px;
-  padding-top:10px;
-  margin-top: 50px;
+  display: inline-block;
+  padding:20px 15px;
   font-size:13px;
+
+  background:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.80)), url(../../assets/images/back.png);
   a{
     font-size:13px;
-    color: $harry-secondary-color;
+    color: $harry-primary-color;
     text-transform: none;
+    opacity:0.8;
+    i{
+      font-size:18px;
+      padding: 0px 5px;
+    }
+    &:hover{
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+
+  div{
+    color: $harry-primary-color;
+    @extend .secondary-text;
   }
 }

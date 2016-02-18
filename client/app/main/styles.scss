@@ -63,7 +63,7 @@ h2{
 }
 .header-section{
     top:100px;
-    background-image: url('../../assets/images/back.png');
+    background:linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url('../../assets/images/back.png');
     @media screen and(min-width: $screen-sm-max) {
        background-image:none;
     }
@@ -121,9 +121,9 @@ h2{
     position: absolute;
 }
 .video-container .filter {
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.9);
     width: 100%;
 }
 .video-container video {
