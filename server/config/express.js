@@ -64,13 +64,19 @@ export default function(app) {
     }));
   }
 
-  app.set('appPath', path.join(config.root, 'client'));
-
   if ('production' === env) {
+    // minified version
+    //app.set('appPath', path.join(config.root, 'dist'));
+
+    // uncomment to deploy dev version
+    app.set('appPath', path.join(config.root, 'client'));
+
     app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
     app.use(express.static(app.get('appPath')));
     app.use(morgan('dev'));
   }
+
+  app.set('appPath', path.join(config.root, 'client'));
 
   if ('development' === env) {
     app.use(require('connect-livereload')());

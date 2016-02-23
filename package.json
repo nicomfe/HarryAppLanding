@@ -1,6 +1,6 @@
 {
   "name": "harry-app-landing",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "server/app.js",
   "dependencies": {
     "babel-runtime": "^5.8.20",
@@ -94,9 +94,7 @@
     "npm": "^2.14.7"
   },
   "scripts": {
-    "start": "node server",
-    "test": "grunt test",
-    "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
+    "start": "node dist/server"
   },
   "private": true
 }
