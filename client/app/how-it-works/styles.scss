@@ -118,7 +118,7 @@ $text-color:white;
   }
 }
 
-/* Small devices (tablets, 768px and below) */
+/* Small devices (phones) */
 @media (max-width: $screen-xs-max){
   .how-it-works-section{
     .features-container{
@@ -128,6 +128,28 @@ $text-color:white;
         margin-right:auto;
         min-width:100%;
         padding: 10px 15px;
+      }
+    }
+  }
+}
+/* Small devices (tablets) */
+@media (max-width: $screen-sm-max){
+  .how-it-works-section {
+    .celphone{
+      img{
+        height: 400px;
+        padding: 10px 15px;
+      }
+    }
+    .features{
+      .feature{
+        .feature-icon{
+          i{
+            &:before{
+              font-size: 45px;
+            }
+          }
+        }
       }
     }
   }
