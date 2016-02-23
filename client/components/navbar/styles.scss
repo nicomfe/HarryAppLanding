@@ -47,7 +47,9 @@ nav>ul {
 nav li {
   height:100px;
   list-style: none;
-  float: left
+  float: left;
+  position: relative;
+  z-index:99;
 }
 
 nav .dropdown {
@@ -94,7 +96,6 @@ nav .dropdown li {
 
 nav .dropdown li a {
   font-size: 13px;
-  min-width: 200px;
 }
 
 nav .mega-dropdown {

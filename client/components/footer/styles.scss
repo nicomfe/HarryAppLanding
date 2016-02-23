@@ -34,3 +34,12 @@ footer.footer {
     @extend .secondary-text;
   }
 }
+
+/* Small devices (tablets, 768px and below) */
+@media (max-width: $screen-xs-max){
+  .footer-section{
+    div{
+      padding: 10px 15px;
+    }
+  }
+}

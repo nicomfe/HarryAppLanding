@@ -118,10 +118,21 @@ $text-color:white;
   }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media screen and(max-width: $screen-sm-min) {
-
+/* Small devices (tablets, 768px and below) */
+@media (max-width: $screen-xs-max){
+  .how-it-works-section{
+    .features-container{
+      display: block;
+      .features{
+        margin-left:auto;
+        margin-right:auto;
+        min-width:100%;
+        padding: 10px 15px;
+      }
+    }
+  }
 }
+
 /* Medium devices (desktops, 992px and up) */
 @media screen and(max-width: $screen-md-min) {
 

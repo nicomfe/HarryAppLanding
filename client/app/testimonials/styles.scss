@@ -17,3 +17,16 @@
     margin: 1em;
   }
 }
+
+/* Small devices (tablets, 768px and below) */
+@media (max-width: $screen-xs-max){
+  .testimonials-section{
+    .testimonials{
+      display:block;
+      padding: 10px 15px;
+      iframe{
+        width:auto !important;
+      }
+    }
+  }
+}
