@@ -1,5 +1,5 @@
 <div id="header-scroll" class="header-section">
-  <div ng-include="'components/navbar/navbar.html'"></div>
+  <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
   <div class="section">
       <div class="video-container overlay">
         <div class="filter"></div>
@@ -9,6 +9,10 @@
       </div>
       <div class="signup">
          <div class="header">
+          <div class="logo-section">
+            <img class="harry-logo" src="../../assets/images/harryapp-logo.svg" alt="">
+            <img class="harry-logotipo" src="../../assets/images/harryapp-logotipo.svg" alt="">
+          </div>
            <h1>The affordable, easier way to transport stuff across New Zealand</h1>
            <h2>It connects people who are going places to people who need stuff to go places.</h2>
          </div>
@@ -27,13 +31,13 @@
           <div class="social">
               <a href="https://twitter.com/harryappnz" target="_blank" class="icon-twitter"></a>
               <a href="https://www.facebook.com/harryapp/" target="_blank" class="icon-facebook"></a>
-              <a href="https://www.instagram.com/harryappnz/" target="_blank" class="icon-instagram"></a>
           </div>
         </div>
       </div>
   </div>
 </div>
 <div class="site-body">
+  <div ng-include="'app/steps/steps.html'"></div>
   <div ng-include="'app/how-it-works/how-it-works.html'"></div>
   <div ng-include="'app/testimonials/testimonials.html'"></div>
   <!-- <div ng-include="'app/get-in-touch/get-in-touch.html'"></div> -->
