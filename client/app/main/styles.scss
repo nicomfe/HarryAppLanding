@@ -58,7 +58,7 @@ h2{
   padding-bottom:50px;
 }
 .header-section{
-    top:100px;
+    position:relative;
     background:linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)), url('../../assets/images/back.png');
     @media screen and(min-width: $screen-sm-max) {
        background-image:none;
