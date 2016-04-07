@@ -35,3 +35,11 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+
+## Deploy to heroku 
+
+grunt build
+<WORKAROUND change name of celphone image and move to steps folder>
+git add .
+git commit -m "your message"
+git push heroku master
